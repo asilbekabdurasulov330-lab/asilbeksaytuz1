@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosh Sahifa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigatsiya menyusi */
+        header {
+            background-color: #1e293b;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #334155;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Asosiy xush kelibsiz qismi */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 60px;
+            margin-bottom: 40px;
+        }
+
+        /* Call Center Tugmasi */
+        .call-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #2563eb;
+            color: white;
+            padding: 15px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .call-btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-3px);
+        }
+
+        /* Mobil qurilmalar uchun moslashuv */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Asosiy Menyusi -->
+    <header>
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <a href="#">Bosh sahifa</a>
+            <a href="#">Xizmatlar</a>
+            <a href="#">Biz haqimizda</a>
+            <a href="#">Aloqa</a>
+        </nav>
+    </header>
+
+    <!-- Xush kelibsiz bloki -->
+    <main class="hero">
+        <h1>Saytimizga <span>Xush Kelibsiz!</span></h1>
+        <p>Siz uchun eng sifatli va zamonaviy xizmatlar markazi.</p>
+        
+        <!-- Call Center -->
+        <a href="tel:880751188" class="call-btn">
+            📞 Call Center: 88 075 11 88
+        </a>
+    </main>
+
+</body>
+</html>
